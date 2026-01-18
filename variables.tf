@@ -22,10 +22,16 @@ variable "tag_name1" {
     default     = "my-ec2-instance1" 
 } 
 
+variable "tag_name2" { 
+    description = "Tag Name of for Ec2 instance" 
+    default     = "my-ec2-instance2" 
+} 
+
 variable "ami_id" { 
     description = "AMI for Ubuntu Ec2 instance" 
     default     = "ami-07ffb2f4d65357b42" 
 }
+
 variable "versioning" {
     type        = bool
     description = "(Optional) A state of versioning."
